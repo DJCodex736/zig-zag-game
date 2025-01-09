@@ -4,7 +4,8 @@
       <title>ZigZag Game</title>
    </head>
    <body style="margin: 0px; overflow: hidden">
-      <canvas id="myCanvas" style="background-color: coral"></canvas>
+      <canvas id="myCanvas" style="background-color: rgb(164, 235, 106)"></canvas>
+      <!-- <canvas id="myCanvas" style="background-color: coral"></canvas> -->
       <script src="rectangle.js"></script>
       <script src="player.js"></script>
       <script src="track.js"></script>
@@ -55,6 +56,7 @@
             player.draw(ctx);
 
             ctx.restore();
+            console.log(track.score);
 
             requestAnimationFrame(animate);
          }
